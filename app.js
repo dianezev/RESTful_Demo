@@ -11,6 +11,14 @@ var app = express();
 // Add VALID API KEY HERE (from http://www.npr.org/account/signup)
 var apiKey = 'your API key goes here in single quotes';
 
+/*
+ * Note: for Github use the following for line 12 instead of actual API key
+ * var apiKey = 'your API key goes here in single quotes';
+ * This msg alerts user if they haven't modified line 12 above with an API key
+ */
+if (apiKey.slice(0,4) === "your") {
+    console.log('Error: You need to add your API Key to the app.js file in order for this to work. See more info in README.md')
+}
 
 app.use(express.static(__dirname + '/public'));
 

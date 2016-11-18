@@ -19,6 +19,8 @@
 &nbsp;
 * Edit line 12 of app.js file by inserting your API Key as follows:
 **`var apiKey = '<your API key goes here>';`**
+&nbsp;
+* In Node.js Command Prompt window, run npm install as follows: **` npm install`**
 
 
 ####To run the app locally (with Node.js):####
