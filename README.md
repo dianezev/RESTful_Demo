@@ -4,7 +4,7 @@
 
 &nbsp;
 #### Purpose of this sample code: ####
-* Demonstrate Cross Origin Resource Sharing (CORS) with a variety of API requests to National Public Radio (both client-side and server-side).
+* Demonstrate Cross Origin Resource Sharing (CORS) with a variety of API requests to get National Public Radio stories and listings (both client-side and server-side).
 &nbsp;
 * Use Node.js/Express to execute server-side requests.
 &nbsp;
