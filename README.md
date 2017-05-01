@@ -1,9 +1,9 @@
 ## RESTful API Demo ##
-#####*By Diane Zevenbergen, dianezev@comcast.net*#####
+##### *By Diane Zevenbergen, dianezev@comcast.net* #####
 
 
 &nbsp;
-####Purpose of this sample code:####
+#### Purpose of this sample code: ####
 * Demonstrate a variety of cross-domain ajax requests from National Public Radio (both client-side and server-side).
 &nbsp;
 * Use Node.js/Express to execute server-side requests.
@@ -12,7 +12,7 @@
 &nbsp;
 * Process data returned in both XML and JSON formats.
 
-####Requirements:####
+#### Requirements: ####
 * For full functionality, a Node.js server and an API Key from National Public Radio is needed. (Without these, you can still demo the *'Show listing'* option.)
 &nbsp;
 * To obtain an API Key, see http://www.npr.org/api/index.php for information and http://www.npr.org/account/signup to signup.
@@ -23,7 +23,7 @@
 * In Node.js Command Prompt window, run npm install as follows: **` npm install`**
 
 
-####To run the app locally (with Node.js):####
+#### To run the app locally (with Node.js): ####
 
 * In Node.js Command Prompt window, set the current directory to the folder
   that contains this application and run app.js as follows: **` node app.js`**
@@ -48,7 +48,7 @@
  &nbsp;
  4. Click on *'Request NPR Articles'* to view results.
  
-####To run the app from the browser (without Node.js):####
+#### To run the app from the browser (without Node.js): ####
 
 * In your browser, open the _**index.html**_ file in the _**/public/**_ folder of this application.
 &nbsp;
@@ -56,7 +56,7 @@
 &nbsp;
 * Note that without Node.js and a valid API Key, the *'Show articles'* option does not work.
  
-####To improve this application:####
+#### To improve this application: ####
 
 * Suggestions, comments and pull requests are all welcome! I'm new to this and always looking for ways to improve my skills.
 &nbsp;
