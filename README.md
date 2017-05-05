@@ -13,17 +13,17 @@
 * Process data returned in both XML and JSON formats.
 
 #### Please note: ####
-* The ** 'View listing' ** feature is fully implemented.
-* The ** 'Read news stories' ** feature of this app is not yet live although the code is in place. (This feature requires Node.js and an API Key from National Public Radio.)
-* To review the code for the **'Read news stories' ** feature, please see ** app.js ** and ** /public/js/index.js **.
+* The **'View listing'** feature is fully implemented.
+* The **'Read news stories'** feature of this app is not yet live although the code is in place. (This feature requires Node.js and an API Key from National Public Radio.)
+* To review the code for the **'Read news stories'** feature, please see **app.js** and **/public/js/index.js**.
 
 #### Instructions to Programmers for Implementing the Node.js Feature: ####
 * See http://www.npr.org/api/index.php for information on obtaining an API Key and http://www.npr.org/account/signup to signup.
 &nbsp;
-* Edit the ** app.js ** file by inserting your API Key as follows:
+* Edit the **app.js** file by inserting your API Key as follows:
 **`var apiKey = '<your API key goes here>';`**
 &nbsp;
-* Remove temporary code in ** $goQuery.click ** event in ** /public/js/index.js **
+* Remove temporary code in **$goQuery.click** event in **/public/js/index.js **
 * In Node.js Command Prompt window, run npm install as follows: **` npm install`**
 
 
