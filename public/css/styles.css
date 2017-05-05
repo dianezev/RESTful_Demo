@@ -6,7 +6,8 @@
 body, select {
 /*	background-color: #b9ccde;*/
 /*	background-color: #ebefbb;*/
-	background-color: #d2d5ea;
+/*	background-color: #d2d5ea;*/
+    background-color: #b5caec;
 /*	background-color: #d5e0d8;*/
 /*	color: #476581;*/
 	color: #415240;
@@ -16,9 +17,11 @@ body {
     height: 100%;
     min-height: 100vh;
 }
-body, input[type='submit'] {
+body {
+
+/*body, input[type='submit'] {*/
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.5em;
 }
 body.wait *, body.wait {
@@ -54,18 +57,25 @@ br {
     line-height: 200%;
 }
 h1 {
-    color: #838181;
+    color: black;
     text-align: center;
 }
-h4 {
+.instruct {
     font-size: 150%;
+    font-style: italic;
+    font-weight: 400;
+    color: #052c97;
+}
+h4 {
     font-weight: 800;
+    font-size: 150%;
     padding: 10px;
     text-align: center;
 }
 input[type='submit'] {
 	background-color: #476581;
 	color: white;
+    font-size: 1.1em;
     margin: 0 auto;
     padding: 10px 10px;
 }
@@ -77,9 +87,9 @@ select {
     border-radius: 0;
     float: right;
     font-size: 1.2em;
-    height: 34px;
+    height: 2em;
     padding: 5px;
-    width: 80%;
+    width: 70%;
 }
 select option {
     min-height: 25px;

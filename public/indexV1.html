@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Node and CORS</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+<!--      <div class="container">-->
+    <h1>Demo: Various Client-side and Server-side Methods for Obtaining Cross Origin Data from NPR</h1>
+    <div class = "options">
+<!--        <div class="blah">-->
+        <form action="">
+            <div>
+                <h3>What kind of NPR information do you want to view?</h3>
+            </div>
+            <div class="button">
+                <input id="getLists" type="radio" name="npr_type" value="lists" />
+                <label for="getLists">Show listing</label>
+<!--            </div>-->
+            <div id="listOptions" class="subOptions">
+                <div class="choice">
+                    <label>For:</label>
+                    <select name="lists">
+                        <option value=3002>All topics</option>
+                        <option value=3018>All music genres</option>
+                        <option value=3004>All programs</option>
+                    </select>
+                </div>
+                <br>
+                <div class="choice">
+                    <label>Format:</label>
+                    <select name="format">
+                        <option value="XML">XML</option>
+                        <option value="JSON">JSON</option>
+                    </select>
+                </div>
+                <br>
+                <div class="choice">
+                    <label>Method:</label>
+                    <select name="method">
+                        <option value="GET">GET</option>
+                        <option value="POST">POST</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+            
+            <br>
+            <div class="button">
+                <input id="getArticles" type="radio" name="npr_type" value="articles" />
+                <label for="getArticles">Show articles</label>
+<!--            </div>-->
+                
+            <div id="articleOptions" class="subOptions">
+                <div class="choice">
+                    <label for="articles">Topic:</label>
+                    <select id="articles" name="articles">
+                        <option value=1149>Afghanistan</option>
+                        <option value=1017>Economy</option>
+                        <option value=1013>Education</option>
+                        <option value=455778960>Political demographics</option>
+                    </select>
+                </div>
+                <br>
+                <div class="choice">
+                    <label for="keyMethod">Method:</label>
+                    <select id="keyMethod" name="keyMethod">
+                        <option value="GET1">GET JSON from client</option>
+                        <option value="GET2">GET JSON from node.js using data attribute &#42;</option>
+                        <option value="GET3">GET JSON from node.js using query argument &#42;</option>
+                        <option value="POST">POST from node.js using query string &#42;</option>
+                    </select>
+                    <br>
+                    <br>
+                    <small>&#42; When data is requested via node.js, the API key can remain private.</small>
+                </div>
+                <br>
+                </div>
+            </div>
+            <br>
+<!--
+            <div id="listOptions" class="option1">
+                <h3>Choose listing of:</h3>
+                <select name="lists">
+                    <option value=3002>All topics</option>
+                    <option value=3018>All music genres</option>
+                    <option value=3004>All programs</option>
+                </select>
+                <br>
+                <h3>Request data in what format?</h3>
+                <select name="format">
+                    <option value="XML">XML</option>
+                    <option value="JSON">JSON</option>
+                </select>
+                <br>
+                <h3>Use what method?</h3>
+                <select name="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                </select>
+            </div>
+            <div id="articleOptions" class="option2">
+                <h3>Choose articles on:</h3>
+                <select name="articles">
+                    <option value=1149>Afghanistan</option>
+                    <option value=1017>Economy</option>
+                    <option value=1013>Education</option>
+                    <option value=455778960>Political demographics</option>
+                </select>
+                <br>
+                <h3>Use what method to request JSON data?</h3>
+                <select name="keyMethod">
+                    <option value="GET1">GET from client (API key visible in browser console)</option>
+                    <option value="GET2">GET from node.js using data attribute (API key not visible)</option>
+                    <option value="GET3">GET from node.js using query argument (API key not visible)</option>
+                    <option value="POST">POST from node.js using query string (API key not visible)</option>
+                </select>
+                <br>
+            </div>
+-->
+            <input id="goQuery" type="submit" value="Get NPR Information" />
+            
+        </form>
+            </div>
+<!--    </div>-->
+    <div id = "result">
+        <ul></ul>
+        <p class='error'></p>
+    </div>
+    
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/index.js"></script>
+<!--          </div>-->
+  </body>
+</html>

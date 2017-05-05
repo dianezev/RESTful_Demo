@@ -12,10 +12,11 @@
         </h1>
         <div class = "options">
             <div>
-                <h4>What kind of NPR information do you want to view?</h4>
+                <h4>NPR News &amp; Information</h4>
+                <h3 class="instruct" >Select an option:</h3>
             </div>
             <div class="button">
-                <h3 id="togList">&raquo; Show listing</h3>
+                <h3 id="togList">&raquo; View listing</h3>
                 <div id="listOptions" class="subOptions">
                     <form action="">
                         <div class="choice">
@@ -45,7 +46,7 @@
                         </div>
                         <br>
                         <br>
-                        <input id="goQuery1" type="submit" value="Request NPR Listing" />
+                        <input id="goQuery1" type="submit" value="Get listing..." />
                     </form>
                     <br>
                     <small>Listings are requested by client</small>
@@ -53,8 +54,8 @@
             </div>
             
             <div class="button">
-                <h3 id="togArticles">&raquo; Show articles</h3>
-                <div id="articleOptions" class="subOptions">
+                <h3 id="togArticles">&raquo; Read news stories</h3>
+                  <div id="articleOptions" class="subOptions">
                     <form action="">
                         <div class="choice">
                             <label for="articles">Topic:</label>
@@ -64,11 +65,22 @@
                                 <option value=1017>Economy</option>
                                 <option value=1013>Education</option>
                                 <option value=139482413>Elections</option>
+                                <option value=1131>Energy</option>
+                                <option value=1025>Environment</option>
                                 <option value=1124>Europe</option>
+                                <option value=1134>Fitness and Nutrition</option>
                                 <option value=1027>Health Care</option>
+                                <option value=1022>Interviews</option>
+                                <option value=1101>Israeli-Palestinian Coverage</option>
                                 <option value=1009>Middle East</option>
+                                <option value=1122>National Security</option>
+                                <option value=1150>NPR News Investigations</option>
+                                <option value=1028>On Aging</option>
+                                <option value=455779263>Politics: Fact Check</option>
+                                <option value=1007>Science</option>
                                 <option value=1019>Technology</option>
                                 <option value=455778960>Political demographics</option>
+                                <option value=1056>World Story of the Day</option>
                             </select>
                         </div>
                         <br>
@@ -83,10 +95,12 @@
                         </div>
                         <br>
                         <br>
-                        <input id="goQuery2" type="submit" value="Request NPR Articles" />
+                        <input id="goQuery2" type="submit" value="Get stories..." />
                     </form>
                     <br>
-                    <small>Articles are requested via Node.js (server file contains API Key)</small>
+<!--                    TBD: revise this note when node.js feature is live-->
+                    <small>This Node.js feature is not yet live.</small>
+                    <small>See code and documentation on <a href="https://github.com/dianezev/RESTful_Demo/blob/master/README.md">Github</a></small>
                 </div>
             </div>
         </div>

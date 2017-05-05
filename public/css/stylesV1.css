@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Global Styles */
+
+body {
+	color: yellow;
+	line-height: 1.5em;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	background-color: #2A4D6E;
+}
+h3 {
+    font-size: 150%;
+    text-align: center;
+}
+input[type='radio' i] {
+    transform: scale(1.8);
+}
+small {
+    font-size: .8em;
+}
+.button > label {
+    font-size: 2em;
+    height: 100%;
+}
+.button {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    border: 2px solid white;
+}
+
+.button, .options h3 {
+    width: 80vw;
+    max-width: 420px;
+    padding: 10px 10px;
+}
+input[type='submit'] {
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+.options {
+    display: table;
+    padding: 3%;
+    margin: 0 auto;
+    text-align: center;
+}
+.choice {
+    width: 95%;
+}
+.choice, .choice label {
+    display: inline-block;
+    padding: 5px;
+}
+.choice label {
+    text-align: right;
+    width: 15%;
+}
+select {
+   background: transparent;
+   width: 80%;
+   padding: 5px;
+   font-size: 1em;
+/*   line-height: 1.2;*/
+   border: 1px white solid;
+   border-radius: 0;
+   height: 34px;
+/*   -webkit-appearance: none; */
+    color: yellow;
+float: right;
+}
+select option {
+/*    line-height: 1.5;*/
+    min-height: 25px;
+    padding: 4px;
+    color: red;
+}
+h1 {
+    text-align: center;
+}
+
+article ul {
+    border: none;
+    color: #041E37;
+    background-color:#728CA6;
+}
+
+article ul.error {
+    border: 5px solid #b22626;
+}
+
+article ul.active {
+    border: 5px solid green;
+}
+
